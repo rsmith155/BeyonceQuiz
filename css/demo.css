@@ -95,7 +95,7 @@ img{
 }
 
 
-#crew-result {
+#cresult {
     padding: 60px 0 40px;
 }
 
@@ -105,7 +105,7 @@ img{
 
 }
 
-#crew-result h1 {
+#cresult h1 {
     text-align: left;
     font-weight: 900;
     text-transform: uppercase;
@@ -118,12 +118,12 @@ img{
 }
 
 
-#crew-result h2 {
+#cresult h2 {
 	margin: 20px 0 10px;
     color: #4f4e4e;
     font-size: 2em;
 }
-#crew-result h3 {
+#cresult h3 {
     font-size: 1.25em;
     text-transform: uppercase;
     font-weight: 700;
@@ -143,6 +143,6 @@ img{
 .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 10%;
+    padding-top: 0;
 	
 }

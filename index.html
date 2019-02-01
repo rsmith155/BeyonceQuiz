@@ -34,7 +34,7 @@
 		</div>
 	</div>
 
-<!-- Quiz demo Code by heidi [at] eroi.com -->
+<!-- Quiz demo Code modified from heidi [at] eroi.com & Kevin578's js quiz on github-->
 	<div class="row">
 	  <div class="medium-10 medium-centered small-12 columns" align="center">
 			<form method="post" id="quiz" name="quiz">
@@ -286,7 +286,7 @@
 		</div>
 
 	</div>
-		<section id="crew-result" style="display:none">
+		<section id="cresult" style="display:none">
 	<div class="row">
 		 <div class="small-10 columns small-centered">
 			 <<h3 id="preamble"></h3>
@@ -299,39 +299,18 @@
 						</div>
 					</div>
 					<div class="row results-container">
-					<!--
-						<div class="medium-4 small-8 small-centered medium-uncentered columns">
-						<div id="player"></div>
-						<script>
-						// 2. This code loads the IFrame Player API code asynchronously
-						var tag = document.createElement('script');
-						tag.src = "https://www.youtube.com/iframe_api";
-						var firstScriptTag = document.getElementsByTagName('script')[0];
-						firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+				
 
-						var player;
-						function onYouTubeIframeAPIReady() {
-							player = new YT.Player('player', {
-								height: '390',
-								width: '640',
-								videoId: '-FjG5dI_d5c'
-
-							});
-						}
-
-
-						</script>
-						</div>
-						</div> -->
-
-<!-- Api Calls for results video -->
-						<iframe class="resp-container" id="existing-iframe-example" 
+<!-- Youtube Api Calls for results video: code modified from https://developers.google.com/youtube/iframe_api_reference -->
+						<iframe class="resp-container" id="existing-iframe" 
 						src
 						frameborder="0"
+						width=640
+						height=430
 						style="border: solid 4px #37474F" align="center"
 						></iframe>
 
-
+<!--Creates youtube player using constructor and changes border of video depending on video state-->
 						<script type="text/javascript">
 						var tag = document.createElement('script');
 						tag.id = 'iframe-demo';
@@ -340,15 +319,18 @@
 						firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 						var player;
 						function onYouTubeIframeAPIReady() {
-							player = new YT.Player('existing-iframe-example', {
+							player = new YT.Player('existing-iframe', {
 								events: {
 									'onReady': onPlayerReady,
 									'onStateChange': onPlayerStateChange
 								}
 							});
 						}
+
+						
+
 						function onPlayerReady(event) {
-							document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+							document.getElementById('existing-iframe').style.borderColor = '#FF6D00';
 						}
 						function changeBorderColor(playerStatus) {
 							var color;
@@ -366,7 +348,7 @@
 		color = "#FF6DOO"; // video cued = orange
 	 }
 	 if (color) {
-		document.getElementById('existing-iframe-example').style.borderColor = color;
+		document.getElementById('existing-iframe').style.borderColor = color;
 	 }
 	}
 	function onPlayerStateChange(event) {
@@ -387,40 +369,12 @@
 </section>
 
 
-<!--<section id="result-container">
-	<div id="result">
-	<div class="row">
-		 <div class="small-10 columns small-centered">
-			 <h3></h3>
-			 <div class="row">
-				<div class="small-12 columns">
-					<div class="row">
-						<div class="large-8 large-4-offset columns">
-							<h1 id="number_correct"></h1>
-						</div>
-					</div>
-					<div class="row results-container">
-						<div class="medium-4 small-8 small-centered medium-uncentered columns">
-							<img src="images/crew/laurie.png">
-						</div>
-						<div class="large-7 end medium-8 columns">
-						 <h2 id="crew-position"></h2>
-						<p id="message"></p>
-				</div>
-			 </div>
-		</div>
-	</div>
-	</div>
-	<div id="error" class="hide">Oops! Please make sure you selected answers for all the questions!</div>
-</section> -->
 
 
 
 
 
-
-
-
+<!-- javascript initializers -->
 <script src="js/vendor/jquery.js"></script>
 <script src="js/vendor/demo.js"></script> 
 <script src="js/foundation.min.js"></script>
