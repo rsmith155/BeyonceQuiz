@@ -22,6 +22,7 @@ label:hover {
   width: 29px;  
 }
 
+/* Header */
 .sticky-shrinknav-header-title {
   transition: all 0.3s ease;
   position: relative;
@@ -36,6 +37,7 @@ label:hover {
 
 }
 
+/* Quiz */
 #quiz-container {
   
   top: 0;
@@ -54,6 +56,7 @@ form#quiz {
     background: 	#000000;
     padding: 5%;
 }
+
 
 body{
 	background: 	#000000;
@@ -90,6 +93,7 @@ img{
 	padding:2%;
   vertical-align:middle;
 }
+
 
 #crew-result {
     padding: 60px 0 40px;
@@ -135,6 +139,7 @@ img{
     max-width: 62.5em;
 }
 
+/* api container */
 .resp-container {
     position: relative;
     overflow: hidden;
