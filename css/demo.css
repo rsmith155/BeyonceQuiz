@@ -52,6 +52,8 @@ label:hover {
 
 }
 
+/* Changes form and color to black */
+
 form#quiz {
     background: 	#000000;
     padding: 5%;
@@ -62,6 +64,8 @@ body{
 	background: 	#000000;
 
 }
+
+/* Establishes header and paragaraph font settings */
 
 h1 {
 	padding: 5%;
@@ -95,6 +99,7 @@ img{
 }
 
 
+/* Establishes padding for containers */
 #cresult {
     padding: 60px 0 40px;
 }
@@ -105,6 +110,7 @@ img{
 
 }
 
+/* establishes font for cresult headers*/
 #cresult h1 {
     text-align: left;
     font-weight: 900;
@@ -130,6 +136,7 @@ img{
     font-style: italic;
 }
 
+/* Modifies row alignment*/
 .row {
     width: 100%;
     margin-left: auto;
