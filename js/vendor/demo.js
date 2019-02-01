@@ -57,6 +57,7 @@ function check(){
 
 	
 	document.getElementById("existing-iframe-example").src=vids[score];
+	console.log(vids[score]);
 	document.getElementById("crew-result").style.display="block";
 
 	document.getElementById("message").innerHTML = messages[score];
