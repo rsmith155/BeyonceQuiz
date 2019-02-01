@@ -31,7 +31,7 @@ function check(){
 		correct++;
 }		
 	
-	var pictures = ["img/win.gif", "img/test1.png","img/test3.png","img/test2.png"];
+	var vids = ["https://www.youtube.com/embed/-FjG5dI_d5c?enablejsapi=1", "https://www.youtube.com/embed/IyuUWOnS9BY?enablejsapi=1","https://www.youtube.com/embed/4S37SGxZSMc?enablejsapi=1","https://www.youtube.com/embed/XQtoCz9dIJQ?enablejsapi=1"];
 	var messages = ["Welcome to the illustrious Alpha chapter of BAK. You are clearly a Beyonce STAN and WORTHY of the black and gold. Stay in formation, make err'body mad. ", "You wake up…Flawless. Post up...Flawless. Your quiz score...(nearly) Flawless. You know enough to stand by the Beyhive and not get stung.", " To My dearest Michelle, youve left Destinys Child and are on your way to stardom, but you have a long way to go.", "Hey, farrah."];
 	var titles = ["BΔK (Alpha Chapter)","Beyhive Adjacent","A Child of Destiny","Destinys (Disowned)Step-Child"]
 	var songs = ["Formation", "***Flawless", "Me, Myself and I", "No,No,No,No pt1"]
@@ -55,8 +55,8 @@ function check(){
 		score = 0;
 	}
 
-	console.log(score);
-	console.log(correct);
+	
+	document.getElementById("existing-iframe-example").src=vids[score];
 	document.getElementById("crew-result").style.display="block";
 
 	document.getElementById("message").innerHTML = messages[score];
