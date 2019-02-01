@@ -69,7 +69,6 @@ function check(){
 	document.getElementById("preamble").innerHTML = "You are...";
 
 	var element = document.getElementById("crew-result");
-
 	element.scrollIntoView({ behavior: 'smooth' });
 
 	
