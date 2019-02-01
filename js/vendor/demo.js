@@ -32,7 +32,7 @@ function check(){
 }		
 	
 	var pictures = ["img/win.gif", "img/test1.png","img/test3.png","img/test2.png"];
-	var messages = ["Welcome to the illustrious Alpha chapter of BAK, rep the black and gold. Stay in formation. ", "You wake up…Flawless", "My dearest Michelle, youve left destinys child and are on your way to stardom, but you have a long way to go.", "Hey, farrah."];
+	var messages = ["Welcome to the illustrious Alpha chapter of BAK. You are clearly a Beyonce STAN and WORTHY of the black and gold. Stay in formation, make err'body mad. ", "You wake up…Flawless. Post up...Flawless. Your quiz score...(nearly) Flawless. You know enough to stand by the Beyhive and not get stung.", " To My dearest Michelle, youve left Destinys Child and are on your way to stardom, but you have a long way to go.", "Hey, farrah."];
 	var titles = ["BΔK (Alpha Chapter)","Beyhive Adjacent","A Child of Destiny","Destinys (Disowned)Step-Child"]
 	var songs = ["Formation", "***Flawless", "Me, Myself and I", "No,No,No,No pt1"]
 	var vidID =[]
