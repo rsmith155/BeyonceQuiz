@@ -135,4 +135,9 @@ img{
     max-width: 62.5em;
 }
 
-
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 10%;
+	
+}
