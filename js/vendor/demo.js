@@ -10,27 +10,44 @@ function check(){
 	var question5 = document.quiz.Q5.value;
 	var question6 = document.quiz.Q6.value;
 	var correct = 0;
+	var wrong = [];
 
 //increments correct based on correct answers
 
 	if (question1 == "Virgo") {
 		correct++;
-}
+}   else {
+	     wrong.push("1");
+	 }
+
 	if (question2 == "Houston, TX") {
 		correct++;
-}	
+}   else  {
+	wrong.push("2");
+}
+	
 	if (question3 == "Hot Sauce") {
 		correct++;
+}   else  {
+	wrong.push("3")
 }
 	if (question4 == "2003") {
 		correct++;
+}   else {
+	wrong.push("4");
 }
+
 	if (question5 == "Blue Ivy, Rumi and Sir") {
 		correct++;
-}	
+}	else {
+	wrong.push("5");
+}
 	if (question6 == "Beyonce, Lativia, Nicky, Ashley, Nina, Kelly") {
 		correct++;
-}	
+} else {
+	wrong.push("6");
+}
+	
 
 //lists to hold different videos, titles and messages	
 	
@@ -69,6 +86,7 @@ function check(){
 	//smooth scrolling when answer is revealed
 	var element = document.getElementById("cresult");
 	element.scrollIntoView({ behavior: 'smooth' });
+	console.log(wrong)
 
 	
 	}
